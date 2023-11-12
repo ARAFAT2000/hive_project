@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
 import 'package:hive_project/pages/home_pages.dart';
+import 'package:hive_project/screen/splass_screen.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'model/notes_model.dart';
@@ -23,8 +24,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
+      home: SplassScreen(),
 
-      home: HomePage(),
     );
   }
 }
